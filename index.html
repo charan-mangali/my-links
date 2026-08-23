@@ -3,70 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Links</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <title>Charan Mangali</title>
   <style>
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background: #0f172a;
+      background: #0b111e;
       color: #f8fafc;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      padding: 20px;
+      padding: 60px 16px 24px;
+      box-sizing: border-box;
     }
     .card {
-      background: #1e293b;
-      padding: 32px;
-      border-radius: 16px;
+      position: relative;
+      background: #172033;
+      padding: 60px 24px 28px;
+      border-radius: 20px;
       width: 100%;
-      max-width: 400px;
+      max-width: 380px;
       text-align: center;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    }
+    .avatar-wrapper {
+      position: absolute;
+      top: -55px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #38bdf8;
+      background: #172033;
+      display: block;
     }
     h1 {
       margin: 0 0 8px 0;
-      font-size: 24px;
+      font-size: 22px;
+      font-weight: 700;
     }
-    p {
-      color: #94a3b8;
-      margin: 0 0 24px 0;
-      font-size: 14px;
+    .bio {
+      color: #cbd5e1;
+      font-size: 13.5px;
+      line-height: 1.45;
+      margin: 0 0 8px 0;
+    }
+    .tagline {
+      color: #38bdf8;
+      font-size: 13px;
+      font-weight: 500;
+      margin-bottom: 22px;
+    }
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
     .btn {
-      display: block;
-      background: #334155;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px; /* Space between the logo and text */
+      background: #2b3952;
       color: #ffffff;
       text-decoration: none;
-      padding: 14px;
+      padding: 13px;
       border-radius: 10px;
-      margin-bottom: 14px;
       font-weight: 500;
+      font-size: 14.5px;
+      margin-bottom: 12px;
       transition: background 0.2s, transform 0.2s;
     }
+
+    .btn i {
+      font-size: 17px;
+    }
     .btn:hover {
-      background: #475569;
+      background: #3a4c6d;
       transform: translateY(-2px);
     }
     .btn.topmate {
       background: #2563eb;
+      font-weight: 600;
     }
     .btn.topmate:hover {
       background: #1d4ed8;
+    }
+    .btn-icon-img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+      display: inline-block;
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <h1>Connect With Me</h1>
-    <p>Check out my latest content and links</p>
+    <div class="avatar-wrapper">
+      <!-- Ensure your image file name in GitHub matches 'profile.jpg' -->
+      <img src="images\IMG20260420100038-removebg-preview.png" alt="Charan Mangali" class="avatar" />
+    </div>
 
-    <!-- Replace '#' with your real URLs -->
-    <a href="https://www.youtube.com/@CharanTejamangali" class="btn" target="_blank">YouTube Channel</a>
-    <a href="https://www.youtube.com/@CharanTejaTelugu" class="btn" target="_blank">Telugu YouTube Channel</a>
-    <a href="https://www.instagram.com/charanmangali6?igsi=MWszdWE1YmxiZGplbg==" class="btn" target="_blank">Instagram</a>
-    <a href="https://topmate.io/charantejamangali/" class="btn topmate" target="_blank">Book 1:1 on Topmate</a>
+    <h1>Charan Mangali</h1>
+    <p class="bio">
+      Data Engineer & Passionate about Data Science, AI & Gen AI. Tech Content Creator.<br />
+      Let's connect or book a session below!
+    </p>
+    <div class="tagline">Data. AI. Tech. Mentorship.</div>
+
+    <a href="https://www.youtube.com/@CharanTejamangali" class="btn" target="_blank">
+      <i class="fa-brands fa-youtube" style="color: #ff0000;"></i> YouTube Channel
+    </a>
+
+    <a href="https://www.youtube.com/@CharanTejaTelugu" class="btn" target="_blank">
+      <i class="fa-brands fa-youtube" style="color: #ff0000;"></i> Telugu YouTube Channel
+    </a>
+
+    <a href="https://www.instagram.com/charanmangali6?igsi=MWszdWE1YmxiZGplbg==" class="btn" target="_blank">
+      <i class="fa-brands fa-instagram" style="color: #e1306c;"></i> Instagram Page
+    </a>
+
+    <a href="https://www.instagram.com/charantejamangali?igsi=OWd2NjdvcHFuZmNj" class="btn" target="_blank">
+      <i class="fa-brands fa-instagram" style="color: #e1306c;"></i> Telugu Instagram Page
+    </a>
+
+    <a href="https://topmate.io/charantejamangali/" class="btn topmate" target="_blank">
+      <!-- Change 'topmate-icon.png' to match your actual file name -->
+      <img src="images\topmate.jpg" alt="Topmate" class="btn-icon-img" /> Book 1:1 on Topmate
+    </a>
   </div>
 </body>
 </html>
