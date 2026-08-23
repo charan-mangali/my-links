@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <title>Charan Mangali</title>
   <style>
     body {
@@ -65,7 +66,10 @@
       gap: 12px;
     }
     .btn {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px; /* Space between the logo and text */
       background: #2b3952;
       color: #ffffff;
       text-decoration: none;
@@ -73,7 +77,12 @@
       border-radius: 10px;
       font-weight: 500;
       font-size: 14.5px;
+      margin-bottom: 12px;
       transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn i {
+      font-size: 17px;
     }
     .btn:hover {
       background: #3a4c6d;
@@ -86,13 +95,19 @@
     .btn.topmate:hover {
       background: #1d4ed8;
     }
+    .btn-icon-img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+      display: inline-block;
+    }
   </style>
 </head>
 <body>
   <div class="card">
     <div class="avatar-wrapper">
       <!-- Ensure your image file name in GitHub matches 'profile.jpg' -->
-      <img src="" alt="Charan Mangali" class="avatar" />
+      <img src="images\IMG20260420100038-removebg-preview.png" alt="Charan Mangali" class="avatar" />
     </div>
 
     <h1>Charan Mangali</h1>
@@ -100,13 +115,24 @@
       Data Engineer & Passionate about Data Science, AI & Gen AI. Tech Content Creator.<br />
       Let's connect or book a session below!
     </p>
-    <div class="tagline">Data. Tech. Mentorship.</div>
+    <div class="tagline">Data. AI. Tech. Mentorship.</div>
 
-    <!-- Replace '#' with your real URLs -->
-    <a href="https://www.youtube.com/@CharanTejamangali" class="btn" target="_blank">YouTube Channel</a>
-    <a href="https://www.youtube.com/@CharanTejaTelugu" class="btn" target="_blank">Telugu YouTube Channel</a>
-    <a href="https://www.instagram.com/charanmangali6?igsi=MWszdWE1YmxiZGplbg==" class="btn" target="_blank">Instagram</a>
-    <a href="https://topmate.io/charantejamangali/" class="btn topmate" target="_blank">Book 1:1 on Topmate</a>
+    <a href="https://www.youtube.com/@CharanTejamangali" class="btn" target="_blank">
+      <i class="fa-brands fa-youtube" style="color: #ff0000;"></i> YouTube Channel
+    </a>
+
+    <a href="https://www.youtube.com/@CharanTejaTelugu" class="btn" target="_blank">
+      <i class="fa-brands fa-youtube" style="color: #ff0000;"></i> Telugu YouTube Channel
+    </a>
+
+    <a href="https://www.instagram.com/charanmangali6?igsi=MWszdWE1YmxiZGplbg==" class="btn" target="_blank">
+      <i class="fa-brands fa-instagram" style="color: #e1306c;"></i> Instagram
+    </a>
+
+    <a href="https://topmate.io/charantejamangali/" class="btn topmate" target="_blank">
+      <!-- Change 'topmate-icon.png' to match your actual file name -->
+      <img src="images\topmate.jpg" alt="Topmate" class="btn-icon-img" /> Book 1:1 on Topmate
+    </a>
   </div>
 </body>
 </html>
